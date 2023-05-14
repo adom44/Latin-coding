@@ -7,6 +7,7 @@
 #define reddere return
 #define si if
 #define aliter else
+#define facere do
 #define dum while
 #define nam for
 #define mutatere switch

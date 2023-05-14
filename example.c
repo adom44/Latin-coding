@@ -59,5 +59,10 @@ int main(){
         
     }
 
+    facere{
+        scribere("\n\nansdoafnoandwinaondwiaondiaondioanfoinidaon\n");
+        x--;
+    }dum(x!=0);
+
     reddere 0;
 }
