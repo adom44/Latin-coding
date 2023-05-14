@@ -2,7 +2,7 @@
 #include <stdarg.h>
 
 #define mille 1000
-
+#define primus main
 #define nihil NULL
 #define redde return
 //#define reddere return

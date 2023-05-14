@@ -6,7 +6,7 @@ realis floatFunction(){
     redde y;
 }
 
-int main(){
+int primus(){
     integer x=0;
     signum s='a';
 
