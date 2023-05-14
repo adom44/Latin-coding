@@ -43,5 +43,5 @@ int main(){
 
     scribere("\n");
 
-    return 0;
+    reditire 0;
 }
