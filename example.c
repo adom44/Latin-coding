@@ -1,9 +1,9 @@
 #include "latin.h"
 
-realum floatFunction(){
-    realum y = (realum)5/(realum)2;
+realis floatFunction(){
+    realis y = (realis)5/(realis)2;
 
-    reditire y;
+    reddere y;
 }
 
 int main(){
@@ -43,5 +43,21 @@ int main(){
 
     scribere("\n");
 
-    reditire 0;
+    signum st[1000]=""; //pro 1000 signa
+    catena str = st;
+
+    nam(int i=0; i<=2; i++){
+        si(i==2){
+            str = nihil;
+        }
+        si(str!=nihil){
+            legere("%s", str);
+            scribere("%s\n", str);
+        }aliter{
+            scribere("%s\n", "fin");
+        }
+        
+    }
+
+    reddere 0;
 }
