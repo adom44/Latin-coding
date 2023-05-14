@@ -3,7 +3,7 @@
 realis floatFunction(){
     realis y = (realis)5/(realis)2;
 
-    reddere y;
+    redde y;
 }
 
 int main(){
@@ -11,7 +11,7 @@ int main(){
     signum s='a';
 
     dum(x!=5){
-        scribere("%c", s);
+        scribe("%c", s);
 
         si(s=='a'){
             s='b';
@@ -37,11 +37,11 @@ int main(){
         
         x++;
     }
-    scribere("\n");
+    scribe("\n");
 
-    scribere("%f",floatFunction());
+    scribe("%f",floatFunction());
 
-    scribere("\n");
+    scribe("\n");
 
     signum st[1000]=""; //pro 1000 signa
     catena str = st;
@@ -51,18 +51,18 @@ int main(){
             str = nihil;
         }
         si(str!=nihil){
-            legere("%s", str);
-            scribere("%s\n", str);
+            lege("%s", str);
+            scribe("%s\n", str);
         }aliter{
-            scribere("%s\n", "fin");
+            scribe("%s\n", "fin");
         }
         
     }
 
-    facere{
-        scribere("\n\nansdoafnoandwinaondwiaondiaondioanfoinidaon\n");
+    fac{
+        scribe("\n\nansdoafnoandwinaondwiaondiaondioanfoinidaon\n");
         x--;
     }dum(x!=0);
 
-    reddere 0;
+    redde 0;
 }
