@@ -71,5 +71,5 @@ integer primus(){
                 perserva;
         }
     }
-    
+    redde 0;
 }
