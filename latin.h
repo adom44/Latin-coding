@@ -16,6 +16,7 @@
 
 
 //actions
+#define exemplum case
 #define seca break
 #define perserva continue
 #define redde return
