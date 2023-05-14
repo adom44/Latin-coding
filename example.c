@@ -16,22 +16,22 @@ int main(){
         si(s=='a'){
             s='b';
         }
-        aliud si(s=='b'){
+        aliter si(s=='b'){
             s='c';
         }
-        aliud si(s=='c'){
+        aliter si(s=='c'){
             s='d';
         }
-        aliud si(s=='d'){
+        aliter si(s=='d'){
             s='e';
         }
-        aliud si(s=='e'){//realfin
+        aliter si(s=='e'){//realfin
             s='f';
         }
-        aliud si(s=='f'){
+        aliter si(s=='f'){
             s='g';
         }
-        aliud si(s=='g'){
+        aliter si(s=='g'){
             s='h';
         }
         

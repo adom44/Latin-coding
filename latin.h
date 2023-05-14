@@ -4,7 +4,7 @@
 
 #define reditire return
 #define si if
-#define aliud else
+#define aliter else
 #define dum while
 #define nam for
 #define mutatere switch
