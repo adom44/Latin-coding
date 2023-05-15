@@ -1,10 +1,17 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include <math.h>
+#include <stdlib.h>
+#include <string.h>
+#include <limits.h>
+
 
 //some terms
 #define mille 1000
 #define primus main
 #define nihil NULL
+#define etiam 1
+#define non 0
 
 //conditionals
 #define si if
@@ -22,11 +29,17 @@
 #define redde return
 
 //datatypes
+#define CARTA FILE
+#define brevis short
 #define integer int
-#define signum char
+#define longum long
+#define signis signed
+#define nonsignis unsigned
+#define littera char
 #define catena char*
 #define realis float
-#define longum double
+#define duplex double
+#define veritas bool
 
 //commands
 #define lege(...) scanf(__VA_ARGS__)
