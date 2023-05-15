@@ -6,7 +6,11 @@
 #include <limits.h>
 
 
-//some terms
+//constants
+#define NOVA_LINEA '\n'
+#define NL '\n'
+#define FINIS_CARTAE EOF
+#define FC EOF
 #define mille 1000
 #define primus main
 #define nihil NULL
@@ -21,12 +25,12 @@
 #define nam for
 #define muta switch
 
-
 //actions
 #define exemplum case
 #define seca break
 #define perserva continue
 #define redde return
+#define salta goto
 
 //datatypes
 #define CARTA FILE
@@ -52,6 +56,58 @@
 #define nonsignis32_t uint32_t
 #define nonsignis64_t uint64_t
 
+//other type stuff
+#define magnitudode(x) sizeof(x)
+#define constans const
+#define staticus static
+
+//modes of opening files
+#define LEGERE "r"
+#define SCRIBERE "w"
+#define ATTRIBUERE "a"
+#define DUPLEX_LEGERE "rb"
+#define DUPLEX_SCRIBERE "wb"
+#define DUPLEX_ATTRIBUERE "wa"
+
+//standard I/O streams
+#define ingressus stdin
+#define egressus stdout
+#define errgressus stderr
+
 //commands
+// <stdio.h>
+#define renomena(x, y) rename(x, y)
+#define tmpcart() tmpfile()
+#define tmpnom(x) tmpnam(x)
+#define claudec(x) fclose(x)
+#define purgac(x) fflush(x)
+#define aperic(x, y) fopen(x, y)
+#define reaperic(x, y, z) freopen(x, y, z)
+#define pone(x, y) setbuf(x, y)
+#define repone(x, y, z, a) setvbuf(x, y, z, a)
+#define legec(...) fscanf(__VA_ARGS__)
+#define scribec(...) fprintf(__VA_ARGS__)
 #define lege(...) scanf(__VA_ARGS__)
 #define scribe(...) printf(__VA_ARGS__)
+
+// <stdlib.h>
+#define puralloc(x, y) calloc(x, y)
+#define dealloc(x) free(x)
+
+#define aadi(x) atoi(x) // ASCII to integer
+#define aadr(x) atof(x) // ASCII to float
+#define aadl(x) atol(x) // ASCII to long
+#define aadll(x) atoll(x) // ASCII to long long
+
+#define catadl(x, y, z) strtol(x, y, z) // string to long
+#define catadll(x, y, z) strtoll(x, y, z) // string to long long
+
+#define catadnsl(x, y, z) strtoul(x, y, z) // string to unsigned long
+#define catadnsll(x, y, z) strtoull(x, y, z) // string to unsigned long long
+
+#define impredicti() rand()
+
+//buffer r/w
+#define catlimscribe(...) snprintf(__VA_ARGS__)
+#define catscribe(...) sprintf(__VA_ARGS__)
+#define catlege(...) sscanf(__VA_ARGS__)
