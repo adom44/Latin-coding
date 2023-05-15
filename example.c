@@ -8,7 +8,7 @@ realis floatFunction(){
 
 int primus(){
     integer x=0;
-    signum s='a';
+    littera s='a';
 
     dum(x!=5){
         scribe("%c", s);
@@ -43,7 +43,7 @@ int primus(){
 
     scribe("\n");
 
-    signum st[1000]=""; //pro 1000 signa
+    littera st[1000]=""; //pro 1000 signa
     catena str = st;
 
     nam(int i=0; i<=2; i++){
