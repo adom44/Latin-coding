@@ -41,6 +41,17 @@
 #define duplex double
 #define veritas bool
 
+//advanced wholenumber datatypes
+#define magnitudo size_t
+#define integer8_t int8_t
+#define integer16_t int16_t
+#define integer32_t int32_t
+#define integer64_t int64_t
+#define nonsignis8_t uint8_t
+#define nonsignis16_t uint16_t
+#define nonsignis32_t uint32_t
+#define nonsignis64_t uint64_t
+
 //commands
 #define lege(...) scanf(__VA_ARGS__)
 #define scribe(...) printf(__VA_ARGS__)
