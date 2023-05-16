@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdarg.h>
 #include <math.h>
-#include <stdlib.h>
+#include <float.h>
 #include <string.h>
 #include <limits.h>
 
@@ -83,8 +84,8 @@
 #define purgac(x) fflush(x)
 #define aperic(x, y) fopen(x, y)
 #define reaperic(x, y, z) freopen(x, y, z)
-#define pone(x, y) setbuf(x, y)
-#define repone(x, y, z, a) setvbuf(x, y, z, a)
+#define constivas(x, y) setbuf(x, y)
+#define reconstivas(x, y, z, a) setvbuf(x, y, z, a)
 #define legec(...) fscanf(__VA_ARGS__)
 #define scribec(...) fprintf(__VA_ARGS__)
 #define lege(...) scanf(__VA_ARGS__)
@@ -111,3 +112,34 @@
 #define catlimscribe(...) snprintf(__VA_ARGS__)
 #define catscribe(...) sprintf(__VA_ARGS__)
 #define catlege(...) sscanf(__VA_ARGS__)
+
+//formatted variable file print
+#define vscribec(...) vfprintf(__VA_ARGS__)
+#define vslegec(...) vfscanf(__VA_ARGS__)
+#define vscribe(...) vprintf(__VA_ARGS__)
+#define vlege(...) vscanf(__VA_ARGS__)
+#define vcatlimscribe(...) vsnprintf(__VA_ARGS__)
+#define vcatscribe(...) vsprintf(__VA_ARGS__)
+#define vcatlege(...) vsscanf(__VA_ARGS__)
+#define accipelc(x) fgetc(x)
+#define accipecatc(x, y, z) fgets(x, y, z)
+#define ponelc(x, y) fputc(x, y)
+#define ponecatc(x, y) fputs(x, y)
+#define accipel(x) getc(x)
+#define accipeling(x) getchar(x)
+#define accipecat(x) gets(x)
+#define ponel(x, y) putc(x, y)
+#define poneling(x) putchar(x)
+#define ponecat(x) puts(x)
+#define naccipel(x, y) ungetc(x, y)
+#define legecar(x, y, z, a) fread(x, y, z, a)
+#define scribecar(x, y, z, a) fwrite(x, y, z, a)
+#define accipetorpos(x, y) fgetpos(x, y)
+#define compensatorpos(x, y, z) fseek(x, y, z)
+#define saltatorpos(x, y) fsetpos(x, y)
+#define nunctorpos(x) ftell(x)
+#define retracta(x) rewind(x)
+#define purgaerr(x) clearerr(x)
+#define fctor(x) feof(x)
+#define errtor(x) ferror(x)
+#define scribeerr(x) perror(x)
