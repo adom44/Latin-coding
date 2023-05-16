@@ -46,7 +46,7 @@ int primus(){
     littera st[1000]=""; //pro 1000 signa
     catena str = st;
 
-    nam(int i=0; i<=2; i++){
+    per(int i=0; i<=2; i++){
         si(i==2){
             str = nihil;
         }
