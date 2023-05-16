@@ -23,7 +23,7 @@
 #define aliter else
 #define fac do
 #define dum while
-#define nam for
+#define per for
 #define muta switch
 
 //actions
