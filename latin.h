@@ -73,73 +73,73 @@
 //standard I/O streams
 #define ingressus stdin
 #define egressus stdout
-#define errgressus stderr
+#define errgressus stderr //error egressus
 
 //commands
 // <stdio.h>
 #define renomena(x, y) rename(x, y)
-#define tmpcart() tmpfile()
-#define tmpnom(x) tmpnam(x)
-#define claudec(x) fclose(x)
-#define purgac(x) fflush(x)
-#define aperic(x, y) fopen(x, y)
-#define reaperic(x, y, z) freopen(x, y, z)
-#define constivas(x, y) setbuf(x, y)
-#define reconstivas(x, y, z, a) setvbuf(x, y, z, a)
-#define legec(...) fscanf(__VA_ARGS__)
-#define scribec(...) fprintf(__VA_ARGS__)
+#define tmpcart() tmpfile() //temporaria carta
+#define tmpnom(x) tmpnam(x) //temporarium nomen
+#define claudec(x) fclose(x) //claude cartam
+#define purgac(x) fflush(x) //purga cartam
+#define aperic(x, y) fopen(x, y) //aperi cartam
+#define reaperic(x, y, z) freopen(x, y, z) //reaperi cartam
+#define constivas(x, y) setbuf(x, y) //consti vas
+#define reconstivas(x, y, z, a) setvbuf(x, y, z, a) //reconsti vas
+#define legec(...) fscanf(__VA_ARGS__) //lege cartam
+#define scribec(...) fprintf(__VA_ARGS__) //lege cartam
 #define lege(...) scanf(__VA_ARGS__)
 #define scribe(...) printf(__VA_ARGS__)
 
 // <stdlib.h>
-#define puralloc(x, y) calloc(x, y)
-#define dealloc(x) free(x)
+#define puralloc(x, y) calloc(x, y) //puram (memoriam) alloca
+#define dealloc(x) free(x) //dealloca
 
-#define aadi(x) atoi(x) // ASCII to integer
-#define aadr(x) atof(x) // ASCII to float
-#define aadl(x) atol(x) // ASCII to long
-#define aadll(x) atoll(x) // ASCII to long long
+#define aadi(x) atoi(x) //ASCII ad integerum || ASCII to integer
+#define aadr(x) atof(x) //ASCII ad realem || ASCII to float
+#define aadl(x) atol(x) //ASCII ad longum || ASCII to long
+#define aadll(x) atoll(x) //ASCII ad longum longum || ASCII to long long
 
-#define catadl(x, y, z) strtol(x, y, z) // string to long
-#define catadll(x, y, z) strtoll(x, y, z) // string to long long
+#define catadl(x, y, z) strtol(x, y, z) //catena ad longum || string to long
+#define catadll(x, y, z) strtoll(x, y, z) //catena ad longum longum || string to long long
 
-#define catadnsl(x, y, z) strtoul(x, y, z) // string to unsigned long
-#define catadnsll(x, y, z) strtoull(x, y, z) // string to unsigned long long
+#define catadnsl(x, y, z) strtoul(x, y, z) //catena ad nonsignis longum || string to unsigned long
+#define catadnsll(x, y, z) strtoull(x, y, z) //catena ad nonsignis longum longum || string to unsigned long long
 
-#define impredicti() rand()
+#define impredicti() rand() //impredictibilis
 
 //buffer r/w
-#define catlimscribe(...) snprintf(__VA_ARGS__)
-#define catscribe(...) sprintf(__VA_ARGS__)
-#define catlege(...) sscanf(__VA_ARGS__)
+#define catlimscribe(...) snprintf(__VA_ARGS__) //catenam _ limita _ scribe
+#define catscribe(...) sprintf(__VA_ARGS__) //catenam scribe
+#define catlege(...) sscanf(__VA_ARGS__) //catenam lege
 
 //formatted variable file print
-#define vscribec(...) vfprintf(__VA_ARGS__)
-#define vslegec(...) vfscanf(__VA_ARGS__)
-#define vscribe(...) vprintf(__VA_ARGS__)
-#define vlege(...) vscanf(__VA_ARGS__)
-#define vcatlimscribe(...) vsnprintf(__VA_ARGS__)
-#define vcatscribe(...) vsprintf(__VA_ARGS__)
-#define vcatlege(...) vsscanf(__VA_ARGS__)
-#define accipelc(x) fgetc(x)
-#define accipecatc(x, y, z) fgets(x, y, z)
-#define ponelc(x, y) fputc(x, y)
-#define ponecatc(x, y) fputs(x, y)
-#define accipel(x) getc(x)
-#define accipeling(x) getchar(x)
-#define accipecat(x) gets(x)
-#define ponel(x, y) putc(x, y)
-#define poneling(x) putchar(x)
-#define ponecat(x) puts(x)
-#define naccipel(x, y) ungetc(x, y)
-#define legecar(x, y, z, a) fread(x, y, z, a)
-#define scribecar(x, y, z, a) fwrite(x, y, z, a)
-#define accipetorpos(x, y) fgetpos(x, y)
-#define compensatorpos(x, y, z) fseek(x, y, z)
-#define saltatorpos(x, y) fsetpos(x, y)
-#define nunctorpos(x) ftell(x)
-#define retracta(x) rewind(x)
-#define purgaerr(x) clearerr(x)
-#define fctor(x) feof(x)
-#define errtor(x) ferror(x)
-#define scribeerr(x) perror(x)
+#define vscribec(...) vfprintf(__VA_ARGS__) //variabilis _ scribe in carta
+#define vlegec(...) vfscanf(__VA_ARGS__) //variabilis _ lege in carta
+#define vscribe(...) vprintf(__VA_ARGS__) //variabilis _ scribe
+#define vlege(...) vscanf(__VA_ARGS__) //variabilis _ lege
+#define vcatlimscribe(...) vsnprintf(__VA_ARGS__) //variabilis _ catenam limita _ scribe
+#define vcatscribe(...) vsprintf(__VA_ARGS__) //variabilis _ catenam scribe
+#define vcatlege(...) vsscanf(__VA_ARGS__) //variabilis _ catenam lege
+#define accipelc(x) fgetc(x) //accipe litteram in carta
+#define accipecatc(x, y, z) fgets(x, y, z) //accipe catenam in carta
+#define ponelc(x, y) fputc(x, y) //pone litteram in carta
+#define ponecatc(x, y) fputs(x, y) //pone catenam in carta
+#define accipel(x) getc(x) //accipe litteram
+#define accipeling(x) getchar(x) //accipe litteram _ ingressus
+#define accipecat(x) gets(x) //accipe catenam
+#define ponel(x, y) putc(x, y) //pone litteram
+#define poneling(x) putchar(x) //pone litteram _ ingressus
+#define ponecat(x) puts(x) //pone catenam
+#define naccipel(x, y) ungetc(x, y) //non accipe litteram
+#define legecar(x, y, z, a) fread(x, y, z, a) //lege in carta
+#define scribecar(x, y, z, a) fwrite(x, y, z, a) //scribe in carta
+#define accipetorpos(x, y) fgetpos(x, y) //accipe torrentem positionem
+#define compensatorpos(x, y, z) fseek(x, y, z) //quaere torrentem positionem
+#define saltatorpos(x, y) fsetpos(x, y) //salta ad torrentis positionem
+#define nunctorpos(x) ftell(x) //nunc _ torrentis position
+#define retracta(x) rewind(x) 
+#define purgaerr(x) clearerr(x) //purga error
+#define fctor(x) feof(x) //FINIS_CARTAE torrentis
+#define errtor(x) ferror(x) //error torrentis
+#define scribeerr(x) perror(x) //scribe errorem
