@@ -84,8 +84,8 @@
 #define purgac(x) fflush(x) //purga cartam
 #define aperic(x, y) fopen(x, y) //aperi cartam
 #define reaperic(x, y, z) freopen(x, y, z) //reaperi cartam
-#define constivas(x, y) setbuf(x, y) //consti vas
-#define reconstivas(x, y, z, a) setvbuf(x, y, z, a) //reconsti vas
+#define constivas(x, y) setbuf(x, y) //constitue vas
+#define reconstivas(x, y, z, a) setvbuf(x, y, z, a) //reconstitue vas
 #define legec(...) fscanf(__VA_ARGS__) //lege cartam
 #define scribec(...) fprintf(__VA_ARGS__) //lege cartam
 #define lege(...) scanf(__VA_ARGS__)
@@ -95,16 +95,16 @@
 #define puralloc(x, y) calloc(x, y) //puram (memoriam) alloca
 #define dealloc(x) free(x) //dealloca
 
-#define aadi(x) atoi(x) //ASCII ad integerum || ASCII to integer
-#define aadr(x) atof(x) //ASCII ad realem || ASCII to float
-#define aadl(x) atol(x) //ASCII ad longum || ASCII to long
-#define aadll(x) atoll(x) //ASCII ad longum longum || ASCII to long long
+#define aadi(x) atoi(x) //ASCII ad integerum
+#define aadr(x) atof(x) //ASCII ad realem
+#define aadl(x) atol(x) //ASCII ad longum
+#define aadll(x) atoll(x) //ASCII ad longum longum
 
-#define catadl(x, y, z) strtol(x, y, z) //catena ad longum || string to long
-#define catadll(x, y, z) strtoll(x, y, z) //catena ad longum longum || string to long long
+#define catadl(x, y, z) strtol(x, y, z) //catena ad longum
+#define catadll(x, y, z) strtoll(x, y, z) //catena ad longum longum
 
-#define catadnsl(x, y, z) strtoul(x, y, z) //catena ad nonsignis longum || string to unsigned long
-#define catadnsll(x, y, z) strtoull(x, y, z) //catena ad nonsignis longum longum || string to unsigned long long
+#define catadnsl(x, y, z) strtoul(x, y, z) //catena ad nonsignis longum
+#define catadnsll(x, y, z) strtoull(x, y, z) //catena ad nonsignis longum longum
 
 #define impredicti() rand() //impredictibilis
 
@@ -139,7 +139,26 @@
 #define saltatorpos(x, y) fsetpos(x, y) //salta ad torrentis positionem
 #define nunctorpos(x) ftell(x) //nunc _ torrentis position
 #define retracta(x) rewind(x) 
-#define purgaerr(x) clearerr(x) //purga error
-#define fctor(x) feof(x) //FINIS_CARTAE torrentis
-#define errtor(x) ferror(x) //error torrentis
+#define purgaerr(x) clearerr(x) //purga errorem
+#define fctor(x) feof(x) //(da) FINIS_CARTAE torrentis
+#define errtor(x) ferror(x) //(da) errorem torrentis
 #define scribeerr(x) perror(x) //scribe errorem
+
+// <string.h>
+//#define memimita(...) memccpy(__VA_ARGS__) //memoriae () imita \\Dunno, what it does
+#define meml(...) memchr(__VA_ARGS__) //(inveni) in memoria litteram
+//#define memcmp(...) memcmp(__VA_ARGS__) //memoriarum compara
+#define memimita(...) memcpy(__VA_ARGS__) //memoriam imita
+#define memmova(...) memmove(__VA_ARGS__) //memoriam mova
+#define memconsti(...) memset(__VA_ARGS__) //memoriam constitue
+//copy the pointer of string
+#define idxfincatimita(...) stpcpy(__VA_ARGS__) //index ad finem catenae _ imita
+#define idxfinfixcatimita(...) stpncpy(__VA_ARGS__) //index ad finem fixae catenae _ imita
+#define catadfine(...) strcat(__VA_ARGS__) //catenam adfine
+#define catl(...) strchr(__VA_ARGS__) //(inveni) catenae litteram
+#define catcmp(...) strcmp(__VA_ARGS__) //catenas compara
+// strcoll means STRing COLLate
+#define catcoll(...) strcoll(__VA_ARGS__) //catenas collige
+// _l is localization
+#define catcoll_l(...) strcoll_l(__VA_ARGS__) //catenas collige in localem
+#define catimita(...) strcpy(__VA_ARGS__) //catenam imita
