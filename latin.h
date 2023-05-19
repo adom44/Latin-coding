@@ -45,6 +45,7 @@
 #define realis float
 #define duplex double
 #define veritas bool
+#define vacuum void
 
 //advanced wholenumber datatypes
 #define magnitudo size_t
