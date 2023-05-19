@@ -1,4 +1,4 @@
-#include "latin.h"
+#include "../latin.h"
 
 realis floatFunction(){
     realis y = (realis)5/(realis)2;
