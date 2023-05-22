@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <stdarg.h>
 #include <math.h>
 #include <float.h>
 #include <string.h>
 #include <limits.h>
-
 
 //constants
 #define NOVA_LINEA '\n'
@@ -14,9 +14,9 @@
 #define FC EOF
 #define mille 1000
 #define primus main
-#define nihil NULL
-#define etiam 1
-#define non 0
+#define NIHIL NULL
+#define est 1
+#define non_est 0
 
 //conditionals
 #define si if
@@ -77,6 +77,8 @@
 #define errgressus stderr //error egressus
 
 //commands
+#define purgatab() system("clear")
+
 // <stdio.h>
 #define renomena(x, y) rename(x, y)
 #define tmpcart() tmpfile() //temporaria carta
