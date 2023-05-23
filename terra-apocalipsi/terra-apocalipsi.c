@@ -104,10 +104,10 @@ integer primus(){
 		lege("%s", impera);
 		
 		si(!catcmp(impera, "mova %d %s")){
-			//
+			ego.meaPersona->posX+=1;
 		}
 		
-	}dum(catcmp(impera, "exire"));
+	}dum(catcmp(impera, "exite"));
 	
 	dealloc(ego.meaPersona);
 	
