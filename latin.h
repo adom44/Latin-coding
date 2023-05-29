@@ -6,6 +6,7 @@
 #include <float.h>
 #include <string.h>
 #include <limits.h>
+#include <ncurses.h>
 
 //constants
 #define NOVA_LINEA '\n'
@@ -77,7 +78,10 @@
 #define errgressus stderr //error egressus
 
 //commands
-#define purgatab() system("clear")
+
+// <ncurses.h>
+#define scribefnst(...) printw(__VA_ARGS__)
+#define purgatab() clear()
 
 // <stdio.h>
 #define renomena(x, y) rename(x, y)
